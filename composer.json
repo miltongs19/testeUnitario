@@ -1,0 +1,19 @@
+{
+    "name": "milton/testeUnitario",
+    "description": "Criação de uma biblioteca básica com testes unitários PHP",
+    "require-dev": {
+        "phpunit/phpunit": "^7.3"
+    },
+    "authors": [
+        {
+            "name": "Milton",
+            "email": "miltongs19@yahoo.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Milton\\TesteUnitario\\" : "src/"
+        }
+    }
+}
