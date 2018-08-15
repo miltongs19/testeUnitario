@@ -20,4 +20,13 @@ class Order
     {
         return $this->products;
     }
+
+    public function getTotal()
+    {
+        $total = 0;
+        foreach($this->products as $product){
+            $total += $product->getPrice();
+        }
+        return $total;
+    }
 }
