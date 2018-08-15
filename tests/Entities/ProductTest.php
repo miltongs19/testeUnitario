@@ -36,12 +36,12 @@ class ProductTest extends \PHPUnit\Framework\TestCase
     
 
     /**
-     * @expectedException InavlidArgumentException
+     * @expectedException InvalidArgumentException
      */
     public function testProductPriceANotNumericGiven()
     {
         $product = new Product();
-        $product->setPrice("222");
+        $product->setPrice("aaa");
         //$this->assertEquals("222", $product->getPrice());
     }       
 

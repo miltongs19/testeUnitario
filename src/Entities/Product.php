@@ -36,7 +36,7 @@ class Product implements IProduct
     public function setPrice($price)
     {
         if(!is_numeric($price)){
-            throw new InvalidArgumentException;
+            throw new \InvalidArgumentException;
         }
         $this->price = $price;
     }    
